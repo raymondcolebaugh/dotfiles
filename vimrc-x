@@ -1,5 +1,11 @@
+" Load standard preferences
 source ~/.vimrc
+
+" Disable extra writing
 set nobackup
 set noswapfile
 set nowritebackup
+
+" Enable Blowfish encryption
 set cm=blowfish
+
