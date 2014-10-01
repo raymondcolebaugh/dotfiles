@@ -12,7 +12,7 @@ with a dot to use them as preferences, e.g.,
 * __irbrc__: interactive ruby preferences
   * Load wirble for syntax highlighting
   * Enable indentation and completion
-* __vimrc __: vim preferences for development
+* __vimrc__: vim preferences for development
   * Load pathogen for plugins
   * Syntax highlighting, brackets, indentation (4 spaces)
   * Keyboard bindings: jk chord to esc, T to open a new tab, and WW to write
