@@ -17,6 +17,7 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 set cc=100
+set mouse=a
 
 " Keyboard mappings
 :inoremap jk <esc>
