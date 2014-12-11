@@ -1,11 +1,18 @@
 " Load standard preferences
 source ~/.vimrc
+set secure
+set viminfo=
 
 " Disable extra writing
 set nobackup
 set noswapfile
 set nowritebackup
+set history=0
+set noshelltemp
 
 " Enable Blowfish encryption
-set cm=blowfish
-
+if version >= 704
+  set cm=blowfish2
+else
+  set cm=blowfish
+endif

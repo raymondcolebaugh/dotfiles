@@ -11,17 +11,21 @@ hi Constant cterm=bold ctermfg=blue guifg=#0000FF
 
 " Set preferences
 set number
+set incsearch
 set hlsearch
 set expandtab
 set tabstop=4
 set shiftwidth=4
 set matchtime=3
+set cc=100
 set mouse=a
 set clipboard=unnamedplus
 
 " Keyboard mappings
 :inoremap jk <esc>
 :inoremap kj <esc>
+nmap T :tabnew<CR>
+nmap WW :w<CR>
 nmap <F8> :TagbarToggle<CR>
 nmap <F2> :NERDTreeToggle<CR>
 nmap BG :let &background = ( &background == "dark"? "light" : "dark" )<CR>

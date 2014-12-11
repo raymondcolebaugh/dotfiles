@@ -1,0 +1,8 @@
+[core]
+    editor = vi
+[user]
+    email = raymondcolebaugh@gmail.com
+    name = Raymond Colebaugh
+[color]
+    ui = on
+
