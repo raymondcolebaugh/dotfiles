@@ -2,5 +2,11 @@ shell -${SHELL}
 defscrollback 10000
 bind j focus down
 bind k focus up
+
 # show all window titles at bottom line of term
-hardstatus alwayslastline "%w"
+hardstatus alwayslastline "%l %H %c %M-%d-%Y %w"
+
+# add shortcut keys to resize split windows
+bind = resize =
+bind + resize +2
+bind - resize -2
