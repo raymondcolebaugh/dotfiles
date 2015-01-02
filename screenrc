@@ -4,7 +4,7 @@ bind j focus down
 bind k focus up
 
 # show all window titles at bottom line of term
-hardstatus alwayslastline "%l %H %c %M-%d-%Y %w"
+hardstatus alwayslastline "%c %M-%d-%Y %= %w %= %H %l"
 
 # add shortcut keys to resize split windows
 bind = resize =
