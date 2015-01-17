@@ -26,6 +26,22 @@ set clipboard=unnamedplus
 :inoremap kj <esc>
 nmap T :tabnew<CR>
 nmap WW :w<CR>
+nmap SO :source %<CR>
+
+" Plugin shortcuts
 nmap <F8> :TagbarToggle<CR>
 nmap <F2> :NERDTreeToggle<CR>
+
+" Toggle light/dark background
 nmap BG :let &background = ( &background == "dark"? "light" : "dark" )<CR>
+
+" PHP Linting
+nmap <Leader>PHPL :! php -l %<CR>
+
+" Compile Latex to pdf with rubber
+nmap <Leader>LA :! rubber --pdf %<CR>
+
+" Common Makefile targets
+nmap <Leader>MA :! make<CR>
+nmap <Leader>MC :! make clean<CR>
+nmap <Leader>MT :! make test<CR>
