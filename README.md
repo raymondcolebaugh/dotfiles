@@ -9,6 +9,7 @@ with a dot to use them as preferences, e.g.,
 
 * __bashrc__: Bash shell preferences
 * __gitconfig__: My git preferences. Probably useless to anyone else
+* __inputrc__: Remap ESC in bash to "jk" chord
 * __irbrc__: interactive ruby preferences
   * Load wirble for syntax highlighting
   * Enable indentation and completion

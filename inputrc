@@ -1,0 +1,8 @@
+# Remap ESC to 'jk'
+# source: http://vim.wikia.com/wiki/Avoid_the_escape_key
+$if mode=vi
+    set keymap vi-command
+    "jk": vi-insertion-mode
+    set keymap vi-insert
+    "jk": vi-movement-mode
+$endif
