@@ -1,8 +1,15 @@
-# Remap ESC to 'jk'
-# source: http://vim.wikia.com/wiki/Avoid_the_escape_key
+# Set vi-mode for readline, remap ESC to 'jk', and
+# add history convenience
+# sources: http://vim.wikia.com/wiki/Avoid_the_escape_key
+#          https://news.ycombinator.com/item?id=9055523
+
+set editing-mode vi
 $if mode=vi
     set keymap vi-command
-    "jk": vi-insertion-mode
+    "gg": beginning-of-history
+    "G": end-of-history
+
     set keymap vi-insert
     "jk": vi-movement-mode
+    "\C-p": history-search-backward C-L: clear-screen
 $endif
