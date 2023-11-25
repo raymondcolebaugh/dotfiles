@@ -1,0 +1,48 @@
+#!/usr/bin/env sh
+
+alias sl=ls
+
+alias rm='rm -i'
+
+# Go tooling
+if [ -e /usr/lib/go-1.8/bin/go ]; then
+    alias go=/usr/lib/go-1.8/bin/go
+fi
+if [ -e /usr/lib/go-1.8/bin/gofmt ]; then
+    alias gofmt=/usr/lib/go-1.8/bin/gofmt
+fi
+
+# GitHub CLI
+if [ -e /usr/bin/git-hub ]; then
+    alias hub=git-hub
+fi
+
+# Tugboat
+if [ -e /var/lib/gems/2.3.0/gems/tugboat-4.1.0/bin/tugboat ]; then
+    alias tugboat=/var/lib/gems/2.3.0/gems/tugboat-4.1.0/bin/tugboat
+fi
+
+# Enable less-style vim for syntax highlighting.
+if [ -e /usr/share/vim/vim73/macros/less.sh ]; then
+    alias less="/usr/share/vim/vim73/macros/less.sh"
+fi
+
+# enable Blowfish encryption
+if [ -f "${HOME}/.vimrc-x" ]; then
+    alias vix="vi -u ~/.vimrc-x -x"
+fi
+
+# fasd aliases
+if [ -f "${HOME}/.local/bin/fasd" ]; then
+	alias v='f -e vim -t -b viminfo' # quick opening files with vim, mimic v
+	alias m='f -e mplayer' # quick opening files with mplayer
+	alias o='a -e xdg-open' # quick opening files with xdg-open
+fi
+
+# Configure colemak toggle
+alias colemak="setxkbmap -layout 'us,us(colemak)' -option 'grp:win_space_toggle'"
+
+# ntfy
+if [ ! -z "${NTFY_URL}" ]; then
+    alias ntfy="curl ${NTFY_URL} -d "
+fi

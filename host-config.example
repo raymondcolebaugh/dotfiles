@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+# Default editor
+export EDITOR=vim
+
+# URL of the default ntfy topic
+export NTFY_URL='https://ntfy.example.com/topic'
